@@ -1,0 +1,56 @@
+# Latex configuration
+.latexcfg
+
+# Notes
+_*.txt
+_*.md
+
+# Compiled version
+*.pdf
+
+# VsCode workspace
+*.code-workspace
+
+# Latexmk
+*.tex.swp
+*.fdb_latexmk
+*.aux
+*.vrb
+*.glo
+*.bcf
+*.code
+*.idx
+*.brf
+*.fls
+*.log
+*.toc
+*.pytxcode
+*.snm
+*.nav
+*.ist
+*.acn
+*.acr
+*.alg
+*.mw
+*.dvi
+*.glg
+*.gls
+*.ilg
+*.ind
+*.lof
+*.wrt
+*.lot
+*.maf
+*.thm
+*.mtc
+*.wrt
+*.run.xml
+*.mtc1
+*.out
+*.synctex*
+
+# BibTeX
+*.blg
+
+# TODO
+TODO*.md
