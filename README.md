@@ -2,7 +2,7 @@
 
 *José R. Berrendero, Antonio Coín and Antonio Cuevas*
 
-The compiled PDF version of this preprint is available [here](https://arxiv.org/pdf/2312.14086). The template used is a slightly modified version of [arxiv-style](https://github.com/kourgeorge/arxiv-style). The associated Python code can be consulted in [this repository](https://github.com/antcc/rk-bfr).
+The compiled PDF version of this preprint is available [here](https://arxiv.org/pdf/2312.14086). It can also be generated via the command `latexmk -pdf paper` (requires `pdflatex`). The template used is a slightly modified version of [arxiv-style](https://github.com/kourgeorge/arxiv-style). The associated Python code can be consulted in [this repository](https://github.com/antcc/rk-bfr).
 
 ## Abstract
 
