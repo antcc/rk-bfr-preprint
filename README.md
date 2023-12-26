@@ -1,3 +1,5 @@
+[![](https://img.shields.io/badge/arXiv-2312.14086-B31B1B?logo=arxiv)](https://arxiv.org/abs/2312.14086)
+
 # A Bayesian approach to functional regression: theory and computation
 
 *José R. Berrendero, Antonio Coín and Antonio Cuevas*
