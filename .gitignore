@@ -7,6 +7,7 @@ _*.md
 
 # Compiled version
 *.pdf
+!figures/*.pdf
 
 # VsCode workspace
 *.code-workspace

@@ -63,7 +63,7 @@
 
 %% Emphasis 
 \newcommand\firstcolor[1]{\textbf{#1}}
-\newcommand\secondcolor[1]{\textit{#1}}
+\newcommand\secondcolor[1]{{\color{RoyalBlue}{#1}}}
 
 %% Bold letters in math mode 
 \makeatletter
@@ -206,7 +206,7 @@ In the case of functional linear regression, the simplified RKHS model considere
 \begin{equation}\label{eq:rkhs-model-linear}
   Y = \alpha_0 + \dotprod{X}{\alpha}_K + \epsilon = \alpha_0 + \sum_{j=1}^p \beta_j X(t_j) + \epsilon,
 \end{equation}
-where \(\alpha(\cdot)=\sum_{j=1}^p\beta_j K(t_j, \cdot) \in \Hcal_{0,p}(K)\), \(\alpha_0\in\R\), and \(\epsilon \sim \mathcal N(0,\sigma^2)\) is an error term independent from \(X\). This model is essentially a finite-dimensional approximation from a functional perspective to the more general RKHS model that assumes \(\alpha \in \Hcal(K)\), proposed in~\citet{berrendero2019rkhs}. When \(p\) is fixed, the parameter space of dimension \(2p + 2\) becomes \(\Theta_p = \R^p \times [0, 1]^p \times \R \times \R^+\), and in the sequel a generic element of this space will be denoted by \(\theta = (\beta_1,\dots, \beta_p, t_1,\dots, t_p, \alpha_0, \sigma^2) \equiv (b, \tau, \alpha_0, \sigma^2)\). Before proceeding any further, observe that we can rewrite model~\eqref{eq:rkhs-model-linear} in a more explicit and practical fashion in terms of the available sample information in \(\mathcal D_n\). For \(\theta \in \Theta_p\), the reinterpreted model assumes the form
+where \(\alpha(\cdot)=\sum_{j=1}^p\beta_j K(t_j, \cdot) \in \Hcal_{0,p}(K)\), \(\alpha_0\in\R\), and \(\epsilon \sim \mathcal N(0,\sigma^2)\) is an error term independent from \(X\). This model is essentially a finite-dimensional approximation from a functional perspective to the more general RKHS model that assumes \(\alpha \in \Hcal(K)\), proposed in~\citet{berrendero2019rkhs}. When \(p\) is fixed, the parameter space of dimension \(2p + 2\) becomes \(\Theta_p = \R^p \times [0, 1]^p \times \R \times \R^+\), and in the sequel a generic element of this space will be denoted by \(\theta = (\beta_1,\dots, \beta_p, t_1,\dots, t_p, \alpha_0, \sigma^2) \equiv (b, \tau, \alpha_0, \sigma^2)\). Before proceeding further, observe that we can rewrite model~\eqref{eq:rkhs-model-linear} in a more explicit and practical fashion in terms of the available sample information in \(\mathcal D_n\). For \(\theta \in \Theta_p\), the reinterpreted model assumes the form
 \begin{equation}\label{eq:rkhs-model-linear-2}
   Y_i \mid X_i, \theta \ \stackrel{\text{ind.}}{\sim} \mathcal N\left(\alpha_0 + \sum_{j=1}^p \beta_j X_i(t_j), \ \sigma^2\right), \quad i =1,\dots, n.
 \end{equation}
@@ -339,7 +339,7 @@ See chapter 7.4.1 of \citet{schervish1995theory}, chapter 10.4 of \citet{van1998
 
 \subsection{Consistency in our RKHS model}
 
-Now we study in detail whether Doob's theorem can be applied in our linear RKHS model, but the posterior consistency results we obtain hold \textit{mutatis mutandis} in the case of the RKHS-based logistic model proposed here. In this section we will assume that the covariance function \(K\) of the underlying stochastic process \(X\) is strictly positive definite. In the linear case the sample space is \(\mathcal X \times \mathcal Y = L^2[0,1]\times \R\), which is already a complete separable metric space. Consider for each \(p\in\N\) the subset of the \((2p+2)\)-Euclidean space
+Now we study in detail whether Doob's theorem can be applied in our linear RKHS model, but the posterior consistency results we obtain hold \textit{mutatis mutandis} in the case of the RKHS-based logistic model proposed here. In this section we will assume that the covariance function \(K\) of the underlying stochastic process \(X\) is strictly positive definite, which is not a very restrictive condition in practice. In the linear case the sample space is \(\mathcal X \times \mathcal Y = L^2[0,1]\times \R\), which is already a complete separable metric space. Next, consider for each \(p\in\N\) the subset of the \((2p+2)\)-Euclidean space
 \[
   \Theta_p = \{(\beta, \tau, \alpha_0, \sigma^2): \beta \in \R^p, \tau \in [0,1]^p, \alpha_0\in \R, \sigma^2 \in \R^+_0\}.
 \]
@@ -535,15 +535,15 @@ In Figure~\ref{fig:reg_emcee_l2} we see the results for the case with an underly
   \caption{Mean and standard error of RMSE of predictors (lower is better) for 10 runs with GP regressors, one in each column, that obey an underlying linear \(L^2\)-model. The first row are direct methods and the second are dimensionality reduction methods.}\label{fig:reg_emcee_l2}
 \end{figure}
 
-\begin{figure}[ht!]
-  \centering
-  \includegraphics[width=.7\textwidth]{reg_emcee_real}
-  \caption{Mean and standard error of RMSE of predictors (lower is better) for 10 runs with real data sets, one in each column. The first row are direct methods and the second are dimensionality reduction methods.}\label{fig:reg_emcee_real}
-\end{figure}
-
 \subsubsection*{Real data}
 
 Figure~\ref{fig:reg_emcee_real} shows the results for the real data sets, where we can see that there is sometimes a substantial difference in performance between some of our methods and the reference algorithms. However, our predict-then-summarize approach (\textit{emcee\_posterior\_mean}) seems to work quite well, always scoring near the mean RMSE of all the comparison algorithms. Moreover, our two-stage methods seem to outperform the summarize-then-predict methods in the Moisture and Sugar data sets, scoring again very close to the mean of the reference models. We have to bear in mind that real data is more complex and noisy than simulated data, and it is possible that after a suitable pre-preprocessing we would obtain better results. However, our goal was to perform a general comparison without focusing too much on the specifics of any particular data set.
+
+\begin{figure}[ht!]
+  \centering
+  \includegraphics[width=.75\textwidth]{reg_emcee_real}
+  \caption{Mean and standard error of RMSE of predictors (lower is better) for 10 runs with real data sets, one in each column. The first row are direct methods and the second are dimensionality reduction methods.}\label{fig:reg_emcee_real}
+\end{figure}
 
 
 \subsection{Functional logistic regression}\label{sec:experiments-logistic}
@@ -569,11 +569,11 @@ Moreover, Figure~\ref{fig:clf_emcee_l2} shows that the results in the \(L^2\) ca
 
 \subsubsection*{Real data}
 
-As for the real data sets, in Figure~\ref{fig:clf_emcee_real} we see positive results in general, obtaining in most cases accuracies well above the mean of the reference models, and sometimes above most of them. In particular, the predict-then-summarize methods tend to have a good performance and achieve a lower standard error across executions, which is a trend that we also saw in the simulated data sets. However, as we have been seeing almost invariably, the models that use \textit{emcee\_mean} are the exception: in all these data sets they perform steadily worse than the rest of our Bayesian models. Moreover, we can appreciate that for the most part our logistic models perform better in comparison with our linear regression models.
+As for the real data sets, in Figure~\ref{fig:clf_emcee_real} we see positive results in general, obtaining in most cases accuracies well above the mean of the reference models, and sometimes above most of them. In particular, the predict-then-summarize methods tend to have a good performance and achieve a lower standard error across executions, which is a trend that we also saw in the simulated data sets. However, as we have been seeing almost invariably, the models that use \textit{emcee\_mean} are the exception: in all these data sets they perform steadily worse than the rest of our Bayesian models. Moreover, we can appreciate that for the most part our logistic models perform better when compared to our linear regression models.
 
 \begin{figure}[ht!]
   \centering
-  \includegraphics[width=.7\textwidth]{clf_emcee_real}
+  \includegraphics[width=.75\textwidth]{clf_emcee_real}
   \caption{Mean and standard error of accuracy of classifiers (higher is better) for 10 runs with real data sets, one in each column. The first row are direct methods and the second are dimensionality reduction methods.}\label{fig:clf_emcee_real}
 \end{figure}
 
