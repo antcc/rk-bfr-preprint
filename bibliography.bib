@@ -1,5 +1,5 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Copyright (c) 2023 The authors
+% Copyright (c) 2024 The authors
 %
 % This work is licensed under a
 % Creative Commons Attribution-ShareAlike 4.0 International License.
@@ -8,7 +8,7 @@
 % work. If not, see <http://creativecommons.org/licenses/by-sa/4.0/>.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%% BiBTeX database for paper.tex bibliography
+%% BiBTeX database for paper.tex and paper-supplement.tex bibliography
 
 @article{abdi2010partial,
   title   = {Partial least squares regression and projection on latent structure regression (PLS Regression)},
@@ -21,13 +21,14 @@
   doi     = {10.1002/wics.51},
 }
 
-@article{abraham2023informative,
+@article{abraham2024informative,
   title   = {An informative prior distribution on functions with application to functional regression},
   author  = {Abraham, Christophe},
-  year    = {2023},
+  year    = {2024},
   journal = {Statistica Neerlandica},
-  volume  = {Early View},
-  pages   = {1--17},
+  volume  = {78},
+  number  = {2},
+  pages   = {357--373},
   doi     = {10.1111/stan.12322},
 }
 
@@ -38,7 +39,7 @@
   year    = {2020},
   journal = {Journal of Statistical Planning and Inference},
   volume  = {208},
-  pages   = {58--65},
+  pages   = {58-65},
   doi     = {10.1016/j.jspi.2020.01.008},
 }
 
@@ -109,7 +110,7 @@
 
 
 @book{berlinet2004reproducing,
-  title     = {Reproducing kernel Hilbert spaces in probability and statistics},
+  title     = {Reproducing Kernel Hilbert Spaces in Probability and Statistics},
   author    = {Berlinet, Alain and Thomas-Agnan, Christine},
   year      = {2004},
   doi       = {10.1007/978-1-4419-9096-9},
@@ -152,11 +153,14 @@
   publisher = {Elsevier},
 }
 
-@article{berrendero2020general,
-  title   = {On a general definition of the functional linear model},
+
+@article{berrendero2024functional,
+  title   = {On the functional regression model and its finite-dimensional approximations},
   author  = {Berrendero, Jos\'{e} R and Cholaquidis, Alejandro and Cuevas, Antonio},
-  year    = {2020},
-  journal = {Preprint \href{https://arxiv.org/abs/2011.05441}{arXiv:2011.05441}},
+  year    = {2024},
+  journal = {Statistical Papers},
+  pages   = {1--35},
+  doi     = {10.1007/s00362-024-01567-9},
 }
 
 @article{berrendero2018use,
@@ -171,7 +175,6 @@
   publisher = {Taylor \& Francis},
 }
 
-
 @article{berrendero2016variable,
   title     = {Variable selection in functional data classification: a maxima-hunting proposal},
   author    = {Berrendero, Jos\'{e} R and Cuevas, Antonio and Torrecilla, Jos\'{e} L},
@@ -182,11 +185,10 @@
   publisher = {Jstor},
 }
 
-
-@article{berrendero2023supplement,
+@article{berrendero2024supplement,
   title   = {Supplementary Material of `A Bayesian approach to functional regression: theory and computation'},
   author  = {Berrendero, Jos\'{e} R. and Co\'{\i}n, Antonio and Cuevas, Antonio},
-  year    = {2023},
+  year    = {2024},
   journal = {Bayesian Analysis},
   doi     = {xx.xxxx/xxxxxxxxx},
 }
@@ -204,7 +206,6 @@
   publisher = {ACS Publications},
 }
 
-
 @article{bro1999exploratory,
   title     = {Exploratory study of sugar production using fluorescence spectroscopy and multi-way analysis},
   author    = {Bro, Rasmus},
@@ -218,6 +219,19 @@
 }
 
 
+
+@article{brooks2003efficient,
+  title   = {Efficient construction of reversible jump Markov chain Monte Carlo proposal distributions},
+  author  = {Brooks, Stephen P and Giudici, Paolo and Roberts, Gareth O},
+  year    = {2003},
+  journal = {Journal of the Royal Statistical Society Series B: Statistical Methodology},
+  volume  = {65},
+  number  = {1},
+  pages   = {3--39},
+  doi     = {10.1111/1467-9868.03711},
+}
+
+
 @book{brooks2011handbook,
   title     = {Handbook of Markov Chain Monte Carlo},
   author    = {Brooks, Steve and Gelman, Andrew and Jones, Galin and Meng, Xiao-Li},
@@ -225,6 +239,7 @@
   doi       = {10.1201/b10905},
   publisher = {Chapman and Hall/CRC},
 }
+
 
 @article{bueno2019variable,
   title     = {Variable Selection for the Prediction of \(C[0, 1]\)-Valued Autoregressive Processes using Reproducing Kernel Hilbert Spaces},
@@ -237,6 +252,7 @@
   doi       = {10.1080/00401706.2018.1505660},
   publisher = {Taylor \& Francis},
 }
+
 
 @article{candes2020phase,
   title     = {The phase transition for the existence of the maximum likelihood estimate in high-dimensional logistic regression},
@@ -276,6 +292,17 @@
 }
 
 
+@article{carlin1995bayesian,
+  title   = {Bayesian model choice via Markov chain Monte Carlo methods},
+  author  = {Carlin, Bradley P and Chib, Siddhartha},
+  year    = {1995},
+  journal = {Journal Of The Royal Statistical Society Series B: Statistical Methodology},
+  volume  = {57},
+  number  = {3},
+  pages   = {473--484},
+  doi     = {10.1111/j.2517-6161.1995.tb02042.x},
+}
+
 @article{celeux2000computational,
   title     = {Computational and Inferential Difficulties with Mixture Posterior Distributions},
   author    = {Celeux, Gilles and Hurn, Merrilee and Robert, Christian P},
@@ -287,7 +314,6 @@
   doi       = {10.1080/01621459.2000.10474285},
   publisher = {Taylor \& Francis},
 }
-
 
 @incollection{choi2008remarks,
   title     = {Remarks on consistency of posterior distributions},
@@ -337,16 +363,31 @@
   publisher = {Springer},
 }
 
+
 @article{cuevas2004anova,
   title     = {An anova test for functional data},
   author    = {Cuevas, Antonio and Febrero, Manuel and Fraiman, Ricardo},
   year      = {2004},
-  journal   = {Computational statistics \& data analysis},
+  journal   = {Computational Statistics \& Data Analysis},
   volume    = {47},
   number    = {1},
   pages     = {111--122},
   doi       = {10.1016/j.csda.2003.10.021},
   publisher = {Elsevier},
+}
+
+
+@inproceedings{davies2023transport,
+  title     = {Transport Reversible Jump Proposals},
+  booktitle = {Proceedings of The 26th International Conference on Artificial Intelligence and Statistics},
+  author    = {Davies, Laurence and Salomone, Robert and Sutton, Matthew and Drovandi, Chris},
+  year      = {2023},
+  volume    = {206},
+  pages     = {6839--6852},
+  editor    = {Ruiz, Francisco and Dy, Jennifer and van de Meent, Jan-Willem},
+  publisher = {PMLR},
+  series    = {Proceedings of Machine Learning Research},
+  url       = {https://proceedings.mlr.press/v206/davies23a.html},
 }
 
 
@@ -361,7 +402,6 @@
   doi       = {10.1111/j.1467-9868.2011.01003.x},
   publisher = {Wiley Online Library},
 }
-
 
 @article{delaigle2012methodology,
   title     = {Methodology and theory for partial least squares applied to functional data},
@@ -393,7 +433,7 @@
   title     = {Application of the theory of martingales},
   author    = {Doob, Joseph L},
   year      = {1949},
-  journal   = {Le calcul des probabilites et ses applications. Colloques Internationaux},
+  journal   = {Le calcul des probabilités et ses applications. Colloques Internationaux},
   volume    = {13},
   pages     = {23--27},
   note      = {\lowercase{url}: \url{https://www.jehps.net/juin2009/Locker.pdf} [at the end]},
@@ -435,6 +475,7 @@
   publisher = {Oxford University Press},
 }
 
+
 @book{ferraty2006nonparametric,
   title     = {Nonparametric functional data analysis: theory and practice},
   author    = {Ferraty, Fr\'{e}d\'{e}ric and Vieu, Philippe},
@@ -454,7 +495,6 @@
   doi       = {10.1093/biomet/80.1.27},
   publisher = {Oxford University Press},
 }
-
 
 @book{folland1999real,
   title     = {Real Analysis: Modern Techniques and Their Applications},
@@ -476,7 +516,6 @@
   publisher = {IOP Publishing},
 }
 
-
 @article{fraiman2001trimmed,
   title     = {Trimmed means for functional data},
   author    = {Fraiman, Ricardo and Muniz, Graciela},
@@ -488,6 +527,7 @@
   doi       = {10.1007/bf02595706},
   publisher = {Springer},
 }
+
 
 
 @article{galeano2015mahalanobis,
@@ -509,6 +549,30 @@
   year      = {2013},
   doi       = {10.1201/b16018},
   publisher = {Chapman and Hall/CRC},
+}
+
+
+@article{gelman2008weakly,
+  title   = {A weakly informative default prior distribution for logistic and other regression models},
+  author  = {Gelman, Andrew and Jakulin, Aleks and Pittau, Maria Grazia and Su, Yu-Sung},
+  year    = {2008},
+  journal = {The Annals of Applied Statistics},
+  volume  = {2},
+  number  = {4},
+  pages   = {1360--1383},
+  doi     = {10.1214/08-AOAS191},
+}
+
+
+@article{gelman1992inference,
+  title   = {Inference from iterative simulation using multiple sequences},
+  author  = {Gelman, Andrew and Rubin, Donald B},
+  year    = {1992},
+  journal = {Statistical Science},
+  volume  = {7},
+  number  = {4},
+  pages   = {457--472},
+  doi     = {10.1214/ss/1177011136},
 }
 
 
@@ -535,6 +599,18 @@
 }
 
 
+@article{ghosh2018use,
+  title   = {On the use of Cauchy prior distributions for Bayesian logistic regression},
+  author  = {Ghosh, Joyee and Li, Yingbo and Mitra, Robin},
+  year    = {2018},
+  journal = {Bayesian Analysis},
+  volume  = {13},
+  number  = {2},
+  pages   = {359--383},
+  doi     = {10.1214/17-BA1051},
+}
+
+
 @article{goia2016introduction,
   title   = {An introduction to recent advances in high/infinite dimensional statistics},
   author  = {Goia, Aldo and Vieu, Philippe},
@@ -544,7 +620,6 @@
   pages   = {1--6},
   doi     = {10.1016/j.jmva.2015.12.001},
 }
-
 
 @article{goodman2010ensemble,
   title     = {Ensemble samplers with affine invariance},
@@ -558,6 +633,7 @@
   publisher = {Mathematical Sciences Publishers},
 }
 
+
 @article{green1995reversible,
   title     = {Reversible jump Markov chain Monte Carlo computation and Bayesian model determination},
   author    = {Green, Peter J},
@@ -566,10 +642,9 @@
   volume    = {82},
   number    = {4},
   pages     = {711--732},
-  doi       = {10.1093/biomet/82.4.711},
+  doi       = {10.2307/2337340},
   publisher = {Oxford University Press},
 }
-
 
 @article{grollemund2019bayesian,
   title     = {Bayesian Functional Linear Regression with Sparse Step Functions},
@@ -584,7 +659,6 @@
   publisher = {International Society for Bayesian Analysis},
 }
 
-
 @article{hastie1995penalized,
   title     = {Penalized discriminant analysis},
   author    = {Hastie, Trevor and Buja, Andreas and Tibshirani, Robert},
@@ -598,6 +672,17 @@
 }
 
 
+@article{hoeting1999bayesian,
+  title   = {Bayesian model averaging: a tutorial (with comments by M. Clyde, David Draper and E. I. George, and a rejoinder by the authors)},
+  author  = {Hoeting, Jennifer A and Madigan, David and Raftery, Adrian E and Volinsky, Chris T},
+  year    = {1999},
+  journal = {Statistical Science},
+  volume  = {14},
+  number  = {4},
+  pages   = {382--417},
+  doi     = {10.1214/ss/1009212519},
+}
+
 @book{hsing2015theoretical,
   title     = {Theoretical Foundations of Functional Data Analysis, with an Introduction to Linear Operators},
   author    = {Hsing, Tailen and Eubank, Randall},
@@ -605,6 +690,18 @@
   doi       = {10.1002/9781118762547},
   publisher = {John Wiley \& Sons},
 }
+
+@article{hukushima1996exchange,
+  title   = {Exchange Monte Carlo method and application to spin glass simulations},
+  author  = {Hukushima, Koji and Nemoto, Koji},
+  year    = {1996},
+  journal = {Journal of the Physical Society of Japan},
+  volume  = {65},
+  number  = {6},
+  pages   = {1604--1608},
+  doi     = {10.1143/JPSJ.65.1604},
+}
+
 
 
 @article{james2001functional,
@@ -620,6 +717,8 @@
 }
 
 
+
+
 @article{james2009functional,
   title     = {Functional linear regression that's interpretable},
   author    = {James, Gareth M and Wang, Jing and Zhu, Ji},
@@ -631,8 +730,6 @@
   doi       = {10.1214/08-aos641},
   publisher = {Institute of Mathematical Statistics},
 }
-
-
 
 
 @article{jasra2005markov,
@@ -677,12 +774,46 @@
 @article{kang2023fast,
   title     = {Fast Bayesian Functional Regression for Non-Gaussian Spatial Data},
   author    = {Kang, Hyun Bin and Jung, Yeo Jin and Park, Jaewoo},
-  year      = {2023},
+  year      = {2024},
   journal   = {Bayesian Analysis},
-  volume    = {Advance Publication},
-  pages     = {1--32},
+  volume    = {19},
+  number    = {2},
+  pages     = {407--438},
   doi       = {10.1214/22-ba1354},
   publisher = {International Society for Bayesian Analysis},
+}
+
+
+@article{karnesis2023eryn,
+  title   = {Eryn: a multipurpose sampler for Bayesian inference},
+  author  = {Karnesis, Nikolaos and Katz, Michael L and Korsakova, Natalia and Gair, Jonathan R and Stergioulas, Nikolaos},
+  year    = {2023},
+  journal = {Monthly Notices of the Royal Astronomical Society},
+  volume  = {526},
+  number  = {4},
+  pages   = {4814--4830},
+  doi     = {10.1093/mnras/stad2939},
+}
+
+
+@article{korsakova2024neural,
+  title   = {Neural density estimation for Galactic Binaries in LISA data analysis},
+  author  = {Korsakova, Natalia and Babak, Stanislav and Katz, Michael L and Karnesis, Nikolaos and Khukhlaev, Sviatoslav and Gair, Jonathan R},
+  year    = {2024},
+  journal = {arXiv preprint \href{https://arxiv.org/abs/2402.13701}{arXiv:2402.13701}},
+}
+
+
+@article{kupresanin2010rkhs,
+  title     = {An RKHS framework for functional data analysis},
+  author    = {Kupresanin, Ana and Shin, Hyejin and King, David and Eubank, RL},
+  year      = {2010},
+  journal   = {Journal of Statistical Planning and Inference},
+  volume    = {140},
+  number    = {12},
+  pages     = {3627--3637},
+  doi       = {10.1016/j.jspi.2010.04.030},
+  publisher = {Elsevier},
 }
 
 
@@ -690,7 +821,7 @@
   title     = {On the Concept of Depth for Functional Data},
   author    = {L\'{o}pez-Pintado, Sara and Romo, Juan},
   year      = {2009},
-  journal   = {Journal of the American statistical Association},
+  journal   = {Journal of the American Statistical Association},
   volume    = {104},
   number    = {486},
   pages     = {718--734},
@@ -705,7 +836,7 @@
   year    = {2016},
   journal = {Journal of Multivariate Analysis},
   volume  = {150},
-  pages   = {27--41},
+  pages   = {27-41},
   doi     = {10.1016/j.jmva.2016.04.008},
 }
 
@@ -720,7 +851,6 @@
   publisher = {Gauthier-Villars},
 }
 
-º
 @article{lukic2001stochastic,
   title   = {Stochastic processes with sample paths in reproducing kernel Hilbert spaces},
   author  = {Luki\'{c}, Milan N and Beder, Jay H},
@@ -745,7 +875,6 @@
   publisher = {Institute of Mathematical Statistics},
 }
 
-
 @article{miller2023consistency,
   title     = {Consistency of mixture models with a prior on the number of components},
   author    = {Miller, Jeffrey W},
@@ -758,14 +887,12 @@
   publisher = {De Gruyter},
 }
 
-
 @article{miller2018detailed,
   title   = {A detailed treatment of Doob's theorem},
   author  = {Miller, Jeffrey W},
   year    = {2018},
-  journal = {Preprint \href{https://arxiv.org/abs/1801.03122}{arXiv:1801.03122}},
+  journal = {arXiv preprint \href{https://arxiv.org/abs/1801.03122}{arXiv:1801.03122}},
 }
-
 
 @article{miller2018mixture,
   title     = {Mixture Models with a Prior on the Number of Components},
@@ -779,7 +906,6 @@
   publisher = {Taylor \& Francis},
 }
 
-
 @phdthesis{nobile1994bayesian,
   title  = {Bayesian analysis of finite mixture distributions},
   author = {Nobile, Agostino},
@@ -788,8 +914,18 @@
 }
 
 
+@article{nobile2007bayesian,
+  title   = {Bayesian finite mixtures with an unknown number of components: The allocation sampler},
+  author  = {Nobile, Agostino and Fearnside, Alastair T},
+  year    = {2007},
+  journal = {Statistics and Computing},
+  volume  = {17},
+  pages   = {147--162},
+  doi     = {10.1007/s11222-006-9014-7},
+}
+
 @article{papastamoulis2015label,
-  title   = {label.switching: An R Package for Dealing with the Label Switching Problem in MCMC Outputs},
+  title   = {label.switching: An R Package for Dealing with the Label Switching Problem in MCMC Outputs },
   author  = {Papastamoulis, Panagiotis},
   year    = {2016},
   journal = {Journal of Statistical Software},
@@ -798,7 +934,6 @@
   pages   = {1--24},
   doi     = {10.18637/jss.v069.c01},
 }
-
 
 @article{parzen1961approach,
   title     = {An Approach to Time Series Analysis},
@@ -859,12 +994,15 @@
   publisher = {Springer},
 }
 
-
-@article{ramos2023scikit,
+@article{ramos2024scikit,
   title   = {scikit-fda: A Python Package for Functional Data Analysis},
   author  = {Ramos-Carreño, Carlos and Torrecilla, José Luis and Carbajo-Berrocal, Miguel and Marcos, Pablo and Suárez, Alberto},
-  year    = {2023},
-  journal = {Preprint \href{https://arxiv.org/abs/2211.02566}{arXiv:2211.02566}},
+  year    = {2024},
+  journal = {Journal of Statistical Software},
+  volume  = {109},
+  number  = {2},
+  pages   = {1--37},
+  doi     = {10.18637/jss.v109.i02},
 }
 
 @book{ramsay2005functional,
@@ -889,6 +1027,28 @@
 }
 
 
+@article{richardson1997bayesian,
+  title   = {On Bayesian analysis of mixtures with an unknown number of components (with discussion)},
+  author  = {Richardson, Sylvia and Green, Peter J},
+  year    = {1997},
+  journal = {Journal of the Royal Statistical Society Series B: Statistical Methodology},
+  volume  = {59},
+  number  = {4},
+  pages   = {731--792},
+  doi     = {10.1111/1467-9868.00095},
+}
+
+@article{robert2014jeffreys,
+  title     = {On the Jeffreys-Lindley paradox},
+  author    = {Robert, Christian P},
+  year      = {2014},
+  journal   = {Philosophy of Science},
+  volume    = {81},
+  number    = {2},
+  pages     = {216--232},
+  doi       = {10.1086/675729},
+  publisher = {Cambridge University Press},
+}
 
 @article{rodriguez2014label,
   title     = {Label Switching in Bayesian Mixture Models: Deterministic Relabeling Strategies},
@@ -902,6 +1062,28 @@
   publisher = {Taylor \& Francis},
 }
 
+
+@article{roodaki2014relabeling,
+  title   = {Relabeling and Summarizing Posterior Distributions in Signal Decomposition Problems When the Number of Components is Unknown},
+  author  = {Roodaki, Alireza and Bect, Julien and Fleury, Gilles},
+  year    = {2014},
+  journal = {IEEE Transactions On Signal Processing},
+  volume  = {62},
+  number  = {16},
+  pages   = {4091--4104},
+  doi     = {10.1109/TSP.2014.2333569},
+}
+
+@incollection{rosenthal2011optimal,
+  title     = {Optimal proposal distributions and adaptive MCMC},
+  booktitle = {Handbook of Markov Chain Monte Carlo},
+  author    = {Rosenthal, Jeffrey S},
+  year      = {2011},
+  pages     = {93--111},
+  doi       = {10.1201/b10905},
+  editor    = {Brooks, S and Gelman, A and Jones, G and Meng, X-L},
+  publisher = {Chapman \& Hall/CRC},
+}
 
 
 @article{scarpa2009bayesian,
@@ -923,8 +1105,6 @@
   doi       = {10.1007/978-1-4612-4250-5},
   publisher = {Springer},
 }
-
-
 
 @article{schwartz1965bayes,
   title     = {On Bayes procedures},
@@ -970,6 +1150,15 @@
   publisher = {Taylor \& Francis},
 }
 
+@article{sperrin2010probabilistic,
+  title   = {Probabilistic relabelling strategies for the label switching problem in Bayesian mixture models},
+  author  = {Sperrin, Matthew and Jaki, Thomas and Wit, Ernst},
+  year    = {2010},
+  journal = {Statistics and Computing},
+  volume  = {20},
+  pages   = {357--366},
+  doi     = {10.1007/s11222-009-9129-8},
+}
 
 @article{stephens2000dealing,
   title     = {Dealing With Label Switching in Mixture Models},
@@ -1016,6 +1205,8 @@
   url       = {https://proceedings.neurips.cc/paper/2016/hash/28b60a16b55fd531047c0c958ce14b95-Abstract.html},
 }
 
+
+
 @article{tuddenham1954physical,
   title   = {Physical growth of California boys and girls from birth to eighteen years},
   author  = {Tuddenham, R D and Snyder, M M},
@@ -1045,7 +1236,6 @@
   publisher = {Cambridge University Press},
 }
 
-
 @article{wales1997global,
   title     = {Global Optimization by Basin-Hopping and the Lowest Energy Structures of Lennard-Jones Clusters Containing up to 110 Atoms},
   author    = {Wales, David J and Doye, Jonathan P K},
@@ -1057,7 +1247,6 @@
   doi       = {10.1021/jp970984n},
   publisher = {ACS Publications},
 }
-
 
 @article{yuan2010reproducing,
   title     = {A reproducing kernel Hilbert space approach to functional linear regression},
