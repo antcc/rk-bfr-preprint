@@ -4,7 +4,7 @@
 
 *José R. Berrendero, Antonio Coín and Antonio Cuevas*
 
-The compiled PDF version of this preprint is available [here](https://arxiv.org/pdf/2312.14086). It can also be generated via the command `latexmk -pdf paper` (requires `pdflatex`). The template used is a slightly modified version of [arxiv-style](https://github.com/kourgeorge/arxiv-style). The associated Python code can be consulted in [this repository](https://github.com/antcc/rk-bfr-jump).
+The compiled PDF version of this preprint is available [here](https://arxiv.org/pdf/2312.14086). It can also be generated via the command `latexmk -pdf paper` (requires `pdflatex`). The template used is a slightly modified version of [arxiv-style](https://github.com/kourgeorge/arxiv-style). 
 
 ## Abstract
 
@@ -12,16 +12,18 @@ We propose a novel Bayesian methodology for inference in functional linear and l
 
 **Keywords**: functional data analysis, functional regression, reproducing kernel Hilbert space, reversible jump MCMC, Bayesian inference, posterior consistency.
 
+## Code
+
+The associated Python code can be consulted in [this repository](https://github.com/antcc/rk-bfr-jump).
+
 ## Main references
 
-Berrendero, J. R., Bueno-Larraz, B., and Cuevas, A. (2019). "An RKHS model for variable selection in functional linear regression". In: *Journal of Multivariate Analysis* 170, pp. 25–45 ([preprint](https://verso.mat.uam.es/~joser.berrendero/papers/2018-jmva-pre.pdf) | [doi](https://doi.org/10.1016/j.jmva.2018.04.008)).
-
 Grollemund, P.-M., Abraham, C., Baragatti, M., and Pudlo, P. (2019). "Bayesian Functional Linear Regression with Sparse Step Functions". In: *Bayesian Analysis* 14(1), pp. 111–135 ([preprint](https://arxiv.org/abs/1604.08403) | [doi](https://doi.org/10.1214/18-BA1095)).
-
-Berrendero, J. R., Cholaquidis, A., and Cuevas, A. (2024). "On the functional regression model and its finite-dimensional approximations.". In: *Statistical Papers*, pp. 1-35 ([preprint](https://arxiv.org/abs/2011.05441) | [doi](https://doi.org/10.1007/s00362-024-01567-9)).
 
 Berrendero, J. R., Bueno-Larraz, B., and Cuevas, A. (2023). "On functional logistic regression: some conceptual issues". In: *TEST* 32, pp. 321-349 ([preprint](https://arxiv.org/abs/1812.00721) | [doi](https://link.springer.com/article/10.1007/s11749-022-00836-9)).
 
 Miller, J. W. (2023). "Consistency of mixture models with a prior on the number of components". In: *Dependence Modeling* 11(1), pp. 20220150 ([preprint](https://arxiv.org/abs/2205.03384) | [doi](https://doi.org/10.1515/demo-2022-0150)).
 
 Karnesis, N., Katz, M. L., Korsakova, N., Gair, J. R., and Stergioulas, N. (2023). "Eryn: a multipurpose sampler for Bayesian inference." In: *Monthly Notices of the Royal Astronomical Society* 526(4), pp. 4814–4830 ([preprint](https://arxiv.org/abs/2303.02164) | [doi](https://doi.org/10.1093/mnras/stad2939)). 
+
+Berrendero, J. R., Cholaquidis, A., and Cuevas, A. (2024). "On the functional regression model and its finite-dimensional approximations.". In: *Statistical Papers*, pp. 1-35 ([preprint](https://arxiv.org/abs/2011.05441) | [doi](https://doi.org/10.1007/s00362-024-01567-9)).
