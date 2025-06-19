@@ -22,6 +22,7 @@ _*.md
 *.code
 *.idx
 *.brf
+*.bbl
 *.fls
 *.log
 *.toc
